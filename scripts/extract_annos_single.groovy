@@ -1,5 +1,6 @@
 """
-extract annotations on current opened image and save in json formatted.
+Extract annotations on current opened image and save in json formatted.
+Using "run for project" in script editor can process selected images automatically.
 
 Format of json file: [Feature, Feature, Feature, ...]
 ("Feature" is a GeoJSON Feature. see https://geojson.org)
@@ -55,5 +56,5 @@ FileWriter writer = new FileWriter(save_path)
 writer.write(gson.toJson(annoGeoJsons))
 writer.flush()
 writer.close()
-println "save in: " + save_path
 println "save pretty: %s".formatted(pretty)
+println "save in: " + save_path
