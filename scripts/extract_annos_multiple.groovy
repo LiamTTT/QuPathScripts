@@ -67,6 +67,6 @@ for (entry in project.getImageList()) {
     writer.write(gson.toJson(annoGeoJsons))
     writer.flush()
     writer.close()
-    println "save in: " + save_path
     println "save pretty: %s".formatted(pretty)
+    println "save in: " + save_path
 }
